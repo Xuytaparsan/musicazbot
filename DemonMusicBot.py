@@ -18,7 +18,7 @@ from pyrogram.types import (
 #config#
 
 bot = Client(
-    'MusicAzBot',
+    'cGuesSongBot',
     bot_token = Config.BOT_TOKEN,
     api_id = Config.API_ID,
     api_hash = Config.API_HASH
@@ -34,7 +34,7 @@ def start(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/MusicAzPlaylist'),
+                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/VusalinBlogu'),
                     InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/{Config.PLAYLIST_NAME}')
                   ],[
                     InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/{Config.BOT_OWNER}')
@@ -55,7 +55,7 @@ def help(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/MusicAzPlaylist'),
+                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/VusalinBlogu'),
                     InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/{Config.PLAYLIST_NAME}')
                   ],[
                     InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/{Config.BOT_OWNER}')
@@ -68,7 +68,7 @@ def help(client, message):
 
 @bot.on_message(filters.command("alive") & filters.user(Config.BOT_OWNER))
 async def live(client: Client, message: Message):
-    livemsg = await message.reply_text('`Mən Qoz Kimi İşləyirəm 😎`')
+    livemsg = await message.reply_text('`Mən Vüsal Kimi İşləyirəm 😎`')
     
 #musiqi əmri#
 
